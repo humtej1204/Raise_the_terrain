@@ -1,5 +1,9 @@
 #include "head.h"
-
+/**
+ * main - Main function (Start point)
+ *
+ * Return: Return 0 if all it's OK
+ */
 int main(void)
 {
 	SDL_Instance instance;
@@ -13,7 +17,7 @@ int main(void)
 		return (1);
 
 	/* Infinite Loop */
-	while(1)
+	while (1)
 	{
 		SDL_SetRenderDrawColor(instance.renderer, 0, 0, 0, 0);
 		SDL_RenderClear(instance.renderer);
@@ -22,12 +26,7 @@ int main(void)
 			break;
 
 		/* Draw */
-		//draw_2D_ejes(instance.renderer);
-		//draw_3D_ejes(instance.renderer);
-		//draw_grid_2d(instance.renderer, 7);
 		draw_grid_3d(instance.renderer, 7, &elements);
-		//draw_pnts(instance.renderer, 7);
-		//draw_plane(instance.renderer);
 
 		SDL_RenderPresent(instance.renderer);
 		/**
