@@ -75,23 +75,13 @@ int poll_events(elem *elements)
 				if (key.keysym.scancode == SDL_SCANCODE_ESCAPE)
 					return (1);
 				if (key.keysym.scancode == SDL_SCANCODE_LEFT)
-				{
-					printf("You have pressed the KEY = LEFT_ARROW\n");
 					elements->rot_angle = elements->rot_angle + 20;
-				}
 				if (key.keysym.scancode == SDL_SCANCODE_RIGHT)
-				{
-					printf("You have pressed the KEY = RIGHT_ARROW\n");
 					elements->rot_angle = elements->rot_angle - 20;
-				}
 				if (key.keysym.scancode == SDL_SCANCODE_UP)
-				{
-					printf("You have pressed the KEY = UP_ARROW\n");
 					elements->size_fact = elements->size_fact + 1;
-				}
 				if (key.keysym.scancode == SDL_SCANCODE_DOWN)
 				{
-					printf("You have pressed the KEY = DOWN_ARROW\n");
 					if (elements->size_fact != 1)
 						elements->size_fact = elements->size_fact - 1;
 				}

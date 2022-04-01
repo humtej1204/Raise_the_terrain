@@ -2,7 +2,7 @@
 CC = gcc
 SDL2_FLAGS = `sdl2-config --cflags --libs`
 CFLAGS = -lm
-FUNCTIONS_FILES = main_functions.c 3d_functions.c 3d_functions_grid.c 2d_functions.c
+FUNCTIONS_FILES = main_functions.c 3d_functions.c 3d_functions_grid.c 2d_functions_grid.c
 
 # Targets
 all:

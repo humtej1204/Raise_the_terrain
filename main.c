@@ -10,7 +10,7 @@ int main(void)
 	elem elements;
 
 	elements.rot_angle = 0;
-	elements.segm_sep = 75;
+	elements.segm_sep = 50;
 	elements.size_fact = 1;
 
 	if (init_instance(&instance) != 0)
